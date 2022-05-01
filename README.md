@@ -1,5 +1,6 @@
-### Gestor de Equipes com ampla experiência em Infraestrutura, Serviços, Sistemas e Projetos, buscando refinar os processos de TI através do uso de frameworks conhecidos de boas práticas em Gerenciamento de Serviços de TI, obtendo assim um melhor alinhamento estratégico entre a TI e o negócio, reduzindo custos através de um melhor uso de recursos, elevando a satisfação e experiência do cliente. Entusiasta em Arquitetura e Desenvolvimento de Sistemas.
+### Olá eu sou Marcel Oliveira, Graduado em Ciências da Computação com MBA Executivo em Administração - Gestão da Técnologia da Informação pela FGV.
 
+🔭 Trabalho como Coordenador de Serviços de TI
 
 
 <!--
