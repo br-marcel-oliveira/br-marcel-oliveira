@@ -21,7 +21,7 @@
 ##
 
 <div>
-<a ref="https://www.linkedin.com/in/marceloliveira/" target="_blank"><img src="hhttps://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://www.linkedin.com/in/marceloliveira/" target="_blank"><img src="hhttps://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </div>
 
 
