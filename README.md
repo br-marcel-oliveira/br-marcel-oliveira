@@ -19,7 +19,7 @@ em"src="https://github-readme-stats.vercel.app/api?username=br-marcel-oliveira&s
 <img align="center" alt="Marcel-Markdown" height ="30" width="40"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg">
 <img align="center" alt="Marcel-Apple" height ="30" width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"/> 
 <img align="center" alt="Marcel-FileZila" height ="30" width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg"/>
-<img align="center" alt="Marcel-GitHub" height ="30" width = "40" src="https://icongr.am/devicon/github-original-wordmark.svg?size=128&color=ff0000"/> 
+<img align="center" alt="Marcel-GitHub" height ="30" width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/> 
 <img align="center" alt="Marcel-mySql" height ="30" width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"/> 
 <img align="center" alt="Marcel-Microsoft" height ="30" width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"/>
 </div>
