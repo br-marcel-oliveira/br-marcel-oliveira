@@ -6,7 +6,7 @@
 
 <div aling ="center">
 <a href="https://github.com/br-marcel-oliveira">
-<img height="180em"src="https://github-readme-stats.vercel.app/api?username=br-marcel-oliveira&show_icons=true&theme=dracula&include_all_commits=ture&count_private=ture"/>
+<img height="200em"src="https://github-readme-stats.vercel.app/api?username=br-marcel-oliveira&show_icons=true&theme=dracula&include_all_commits=ture&count_private=ture"/>
 <img height="200em"src="https://github-readme-stats.vercel.app/api/top-langs/?username=br-marcel-oliveira&layout=compact&langs_count=10&theme=dracula"/>
 </div>
 
