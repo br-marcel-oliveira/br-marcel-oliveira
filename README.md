@@ -10,6 +10,9 @@
 <img height="180em"src="https://github-readme-stats.vercel.app/api/top-langs/?username=br-marcel-oliveira&layout=compact&langs_count=7&theme=dracula"/>
 </div>
 
+<div style="Display: inline_block"><br>
+<img align="center" alt="Marcel-HMTL"heigh ="30" width="40"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
 
 
 <!--
