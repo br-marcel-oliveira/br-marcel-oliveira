@@ -1,7 +1,7 @@
 ### Olá eu sou Marcel Oliveira, Graduado em Ciências da Computação com MBA Executivo em Administração - Gestão da Técnologia da Informação pela FGV.
 
-- - 🔭 Trabalho como Coordenador de Serviços de TI
-🌱 Estou constantemente em busca de novos conhecimentos
+- 🔭 Trabalho como Coordenador de Serviços de TI
+- 🌱 Estou constantemente em busca de novos conhecimentos
 
 <div>
 <a href="https://github.com/br-marcel.oliveira">
