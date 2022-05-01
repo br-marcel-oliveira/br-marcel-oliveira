@@ -20,6 +20,8 @@
 
 ##
 
+<div>
+<a ref="https://www.linkedin.com/in/marcel.oliveira" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style-for-the-badge&logo=linkedin&logocolor=white"target="_blank"></a>
 
 
 
