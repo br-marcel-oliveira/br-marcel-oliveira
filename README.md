@@ -16,7 +16,11 @@
 <img align="center" alt="Marcel-Python" height ="30" width="40"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 <img align="center" alt="Marcel-JS" height ="30" width="40"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
 <img align="center" alt="Marcel-Markdown" height ="30" width="40"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/markdown/markdown-original.svg">
-<img align="center" alt="Marcel-Apple" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" />  
+<img align="center" alt="Marcel-Apple" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"/> 
+<img align="center" alt="Marcel-FileZila" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg"/>
+<img align="center" alt="Marcel-GitHub" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"/> 
+<img align="center" alt="Marcel-mySql" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"/> 
+<img align="center" alt="Marcel-Microsoft" height ="30"width = "40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"/>
 </div>
 
 ##
