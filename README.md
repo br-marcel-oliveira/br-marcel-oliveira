@@ -2,7 +2,7 @@
 
 - 🔭 Trabalho como Coordenador de Serviços de TI
 - 🌱 Estou constantemente em busca de novos conhecimentos
-- 💪 Infraestrutura/Gestão de TI/Projetos de TI/Desenvolvimento e Arquitetura de Sistemas
+- 💪 Infraestrutura / Gestão de TI / Projetos de TI / Desenvolvimento e Arquitetura de Sistemas
 
 <div aling ="center">
 <a href="https://github.com/br-marcel-oliveira">
