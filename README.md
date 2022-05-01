@@ -2,9 +2,10 @@
 
 - 🔭 Trabalho como Coordenador de Serviços de TI
 - 🌱 Estou constantemente em busca de novos conhecimentos
+- 
 
 <div>
-<a href="https://github.com/br-marcel.oliveira">
+<a href="https://github.com/br-marcel-oliveira">
 <img height="180em"src="https://github-readme-stats.vercel.app/api?username=br-marcel-oliveira&show_icons=true&theme=dracula&include_all_commits=ture&count_private=ture"/>
 <img height="180em"src="https://github-readme-stats.vercel.app/api/top-langs/?username=br-marcel-oliveira&layout=compact&langs_count=16&theme=dracula"/>
 
