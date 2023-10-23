@@ -2,7 +2,7 @@
 
 - 🔭 Trabalho como Coordenador de Operações de TI 24x7
 - 🌱 Estou constantemente em busca de novos conhecimentos
-- 🚀 Infraestrutura de TI / Gestão de TI / Projetos de TI / Desenvolvimento e Arquitetura de Sistemas
+- 🚀 Operações 24x7 / Infraestrutura de TI / Gestão de TI / Projetos de TI / Desenvolvimento e Arquitetura de Sistemas
 
 <div aling ="center">
 <a href="https://github.com/br-marcel-oliveira">
