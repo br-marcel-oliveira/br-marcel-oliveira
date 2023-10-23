@@ -1,6 +1,6 @@
 ### Olá eu sou Marcel Oliveira, Graduado em Ciências da Computação pela UMESP com MBA Executivo em Administração - Gestão da Técnologia da Informação pela FGV.
 
-- 🔭 Trabalho como Coordenador de Serviços de TI
+- 🔭 Trabalho como Coordenador de Operações de TI 24x7
 - 🌱 Estou constantemente em busca de novos conhecimentos
 - 🚀 Infraestrutura de TI / Gestão de TI / Projetos de TI / Desenvolvimento e Arquitetura de Sistemas
 
