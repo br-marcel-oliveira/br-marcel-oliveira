@@ -1,8 +1,8 @@
 ### Olá eu sou Marcel Oliveira, Graduado em Ciências da Computação pela UMESP com MBA Executivo em Administração - Gestão da Técnologia da Informação pela FGV.
 
-- 🔭 Trabalho como Coordenador de Operações de TI 24x7
+- 🔭 Trabalho como Head de TI na ZoomHolding
 - 🌱 Estou constantemente em busca de novos conhecimentos
-- 🚀 Operações 24x7 / Infraestrutura de TI / Gestão de TI / Projetos de TI / Desenvolvimento e Arquitetura de Sistemas
+- 🚀 IT Manager @ ZoomHolding | Head de Tecnologia | CIO | Cybersecurity  | Governança de TI | Data Science | Inovação com Propósito | Gestor de Projetos Estratégicos em TI | Gestor de Operações de Missão Critica de TI
 
 <div aling ="center">
 <a href="https://github.com/br-marcel-oliveira">
