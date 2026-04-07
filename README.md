@@ -1,4 +1,9 @@
-### Olá eu sou Marcel Oliveira, Graduado em Ciências da Computação pela UMESP com MBA Executivo em Administração - Gestão da Técnologia da Informação pela FGV.
+## Olá eu sou Marcel Oliveira
+Líder estratégico em Tecnologia da Informação, com mais de 25 anos de experiência conectando tecnologia à estratégia de negócios para impulsionar crescimento, eficiência operacional e vantagem competitiva sustentável.
+
+Especialista na estruturação e otimização de operações de TI de missão crítica, conduzindo transformações digitais, implementações e integrações de sistemas, além de reestruturações organizacionais complexas, sempre traduzindo visão estratégica em execução sólida e mensurável. Meu foco é converter visões estratégicas em excelência operacional, solidificando a TI como um pilar fundamental e um parceiro de valor para os negócios.
+
+Sou reconhecido pela capacidade de construir, desenvolver e inspirar equipes multidisciplinares de alta performance, com um estilo de liderança colaborativo, pragmático e orientado a resultados, focado em performance, engajamento e entrega consistente.
 
 - 🔭 Trabalho como Head de TI na ZoomHolding
 - 🌱 Estou constantemente em busca de novos conhecimentos
