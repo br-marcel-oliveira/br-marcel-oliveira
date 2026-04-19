@@ -25,4 +25,8 @@ Atuo como **Head de TI na ZoomHolding** — holding com 8 unidades de negócio �
 
 ## 📈 GitHub Stats
 
-[![Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=br-marcel-oliveira&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide_border=true&height=150)](https://github.com/br-marcel-oliveira)[![Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=br-marcel-oliveira&layout=compact&langs_count=6&theme=dracula&hide_border=true&card_width=320)](https://github.com/br-marcel-oliveira)
+<div align="center">
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=br-marcel-oliveira&theme=dracula)
+
+</div>
