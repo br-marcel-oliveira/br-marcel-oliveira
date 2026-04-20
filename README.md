@@ -1,7 +1,7 @@
 <div align="center">
 
 # Marcel Oliveira
-### Head de TI · Liderança Técnica com Visão Estratégica · 25+ anos
+### Head de TI · Tecnologia como Estratégia de Negócio · 25+ anos
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-br--marcel--oliveira-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/br-marcel-oliveira)
 [![Twitter](https://img.shields.io/badge/Twitter-@br_marcel_olv-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/br_marcel_olv)
@@ -13,13 +13,43 @@
 
 ## 👋 Sobre mim
 
-Líder estratégico em Tecnologia da Informação, com mais de 25 anos de experiência conectando tecnologia à estratégia de negócios para impulsionar crescimento, eficiência operacional e vantagem competitiva sustentável.
+Líder de Tecnologia com atuação estratégica, especializado em transformar TI em **motor de crescimento, eficiência operacional e vantagem competitiva**.
 
-Especialista na estruturação e otimização de operações de TI de missão crítica, conduzindo transformações digitais, implementações e integrações de sistemas, além de reestruturações organizacionais complexas, sempre traduzindo visão estratégica em execução sólida e mensurável. Meu foco é converter visões estratégicas em excelência operacional, solidificando a TI como um pilar fundamental e um parceiro de valor para os negócios.
+Ao longo de 25+ anos, venho estruturando e evoluindo operações de missão crítica, liderando **transformações digitais, modernização de sistemas e arquitetura de dados**, sempre conectando decisões tecnológicas aos objetivos de negócio.
 
-Sou reconhecido pela capacidade de construir, desenvolver e inspirar equipes multidisciplinares de alta performance, com um estilo de liderança colaborativo, pragmático e orientado a resultados, focado em performance, engajamento e entrega consistente.
+Hoje atuo como **Head de TI na ZoomHolding**, liderando iniciativas que impactam diretamente performance, escalabilidade e governança em um ecossistema com múltiplas unidades de negócio.
 
-Atuo como **Head de TI na ZoomHolding** — holding com 8 unidades de negócio — onde lidero operações críticas 24x7, transformação digital e arquitetura de dados.
+---
+
+## ⚡ Onde gero valor
+
+- Transformação de TI de área operacional para **parceiro estratégico do negócio**
+- Estruturação e escala de operações críticas com alta disponibilidade
+- Liderança de projetos complexos (ERP, integrações, dados, automação)
+- Reestruturação organizacional e formação de **times de alta performance**
+- Governança de TI com foco em eficiência, risco e previsibilidade
+
+---
+
+## 🧠 Estilo de liderança
+
+Pragmático, orientado a resultado e execução.
+
+Combino visão estratégica com capacidade de descer ao detalhe quando necessário, garantindo que planejamento, operação e entrega estejam alinhados.
+
+Foco em:
+- Clareza de direção
+- Responsabilização
+- Performance consistente
+- Evolução contínua do time
+
+---
+
+## 🚀 Impactos recentes
+
+- Liderança na modernização de ERP corporativo
+- Estruturação de operações de TI 24x7 com foco em alta disponibilidade
+- Evolução de governança e gestão de riscos em ambiente multiempresa
 
 ---
 
@@ -31,3 +61,8 @@ Atuo como **Head de TI na ZoomHolding** — holding com 8 unidades de negócio �
 <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=br-marcel-oliveira&layout=compact&langs_count=8&theme=dracula&hide_border=true&card_width=300"/>
 </div>
 
+---
+
+## 🤝 Vamos conectar
+
+Aberto a trocas estratégicas sobre tecnologia, liderança e transformação digital.
