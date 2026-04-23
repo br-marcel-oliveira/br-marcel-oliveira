@@ -63,6 +63,8 @@ Foco em:
 
 ---
 
-## 🤝 Vamos conectar
+## 🤝 Vamos conectar? 
 
 Aberto a trocas estratégicas sobre tecnologia, liderança e transformação digital.
+
+[Me chama por aqui](https://linkedin.com/in/br-marcel-oliveira)
