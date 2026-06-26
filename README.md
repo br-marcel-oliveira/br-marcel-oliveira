@@ -48,6 +48,8 @@ Foco em:
 ## 🚀 Impactos recentes
 
 - Liderança na modernização de ERP corporativo
+- Evolução da Arquitetura e governança de Dados
+- Implementação de Projetos de Cibersegurança
 - Estruturação de operações de TI 24x7 com foco em alta disponibilidade
 - Evolução de governança e gestão de riscos em ambiente multiempresa
 
