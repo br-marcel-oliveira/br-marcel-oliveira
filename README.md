@@ -5,7 +5,6 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-br--marcel--oliveira-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/br-marcel-oliveira)
 [![Twitter](https://img.shields.io/badge/Twitter-@br_marcel_olv-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/br_marcel_olv)
-[![ZoomHolding](https://img.shields.io/badge/Empresa-ZoomHolding-informational?style=for-the-badge&logoColor=white)](https://github.com/br-marcel-oliveira)
 
 </div>
 
@@ -16,8 +15,6 @@
 Líder de Tecnologia com atuação estratégica, especializado em transformar TI em **motor de crescimento, eficiência operacional e vantagem competitiva**.
 
 Ao longo de 25+ anos, venho estruturando e evoluindo operações de missão crítica, liderando **transformações digitais, modernização de sistemas e arquitetura de dados**, sempre conectando decisões tecnológicas aos objetivos de negócio.
-
-Hoje atuo como **Head de TI na ZoomHolding**, liderando iniciativas que impactam diretamente performance, escalabilidade e governança em um ecossistema com múltiplas unidades de negócio.
 
 ---
 
