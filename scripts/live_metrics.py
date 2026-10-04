@@ -23,6 +23,9 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
+sys.path.insert(0, os.path.dirname(__file__))
+from brand import AMBER, BLACK, BODY, DISPLAY, GRAY, SILVER, TEAL, WHITE, font_css  # noqa: E402
+
 API = "https://api.github.com"
 TOKEN = os.environ["METRICS_TOKEN"]
 CONFIG = json.loads(os.environ["METRICS_CONFIG"])
@@ -112,55 +115,48 @@ def ago(t):
     return f"há {h // 24}d"
 
 
-THEMES = {
-    "dark": {"bg": "#0d1117", "border": "#30363d", "fg": "#e6edf3", "muted": "#8b949e",
-             "accent": "#3ddc97", "down": "#f85149"},
-    "light": {"bg": "#ffffff", "border": "#d0d7de", "fg": "#1f2328", "muted": "#59636e",
-              "accent": "#1a7f37", "down": "#cf222e"},
-}
-SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,sans-serif"
-MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
-
-
-def live_svg(t, cells, stamp):
-    w, h = 800, 132
-    col = w / len(cells)
+def live_svg(cells, stamp):
+    w, h = 880, 150
+    col = (w - 48) / len(cells)
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">',
-        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="{t["bg"]}" stroke="{t["border"]}"/>',
+        "<style>" + font_css("sg-400", "inter-300", "inter-600") + "</style>",
+        f'<rect width="{w}" height="{h}" rx="16" fill="{BLACK}"/>',
     ]
     for i, (value, label) in enumerate(cells):
-        x = i * col + 28
-        if i:
-            parts.append(f'<line x1="{i * col}" y1="28" x2="{i * col}" y2="92" stroke="{t["border"]}"/>')
-        color = t["accent"] if i == 0 else t["fg"]
+        x = 40 + i * col
+        color = AMBER if i == 0 else WHITE
         parts.append(
-            f'<text x="{x}" y="66" font-family="{SANS}" font-size="34" font-weight="700" '
-            f'fill="{color}">{escape(value)}</text>'
+            f'<text x="{x}" y="78" font-family="{DISPLAY}" font-weight="400" font-size="46" '
+            f'letter-spacing="-1.5" fill="{color}">{escape(value)}</text>'
         )
         parts.append(
-            f'<text x="{x}" y="90" font-family="{MONO}" font-size="12" fill="{t["muted"]}">{escape(label)}</text>'
+            f'<text x="{x + 2}" y="104" font-family="{BODY}" font-weight="600" font-size="11" '
+            f'letter-spacing=".9" fill="{GRAY}">{escape(label.upper())}</text>'
         )
     parts.append(
-        f'<text x="{w - 20}" y="{h - 14}" text-anchor="end" font-family="{MONO}" font-size="10" '
-        f'fill="{t["muted"]}">atualizado {escape(stamp)}</text>'
+        f'<text x="{w - 40}" y="{h - 18}" text-anchor="end" font-family="{BODY}" font-weight="300" '
+        f'font-size="11" fill="{GRAY}">atualizado {escape(stamp)}</text>'
     )
     parts.append("</svg>")
     return "\n".join(parts)
 
 
-def status_svg(t, up, uptime, latency):
-    w, h = 340, 28
-    dot = t["accent"] if up else t["down"]
-    state = "API ONLINE" if up else "API OFFLINE"
+def status_svg(up, uptime, latency):
+    w, h = 300, 30
+    dot = TEAL if up else AMBER
+    state = "ONLINE" if up else "OFFLINE"
     detail = f"uptime 30d {uptime} · {latency} ms"
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
-        f'<style>@keyframes p{{0%,100%{{opacity:1}}50%{{opacity:.35}}}}.d{{animation:p 2s ease-in-out infinite}}</style>'
-        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>'
-        f'<circle class="d" cx="16" cy="14" r="4" fill="{dot}"/>'
-        f'<text x="28" y="18" font-family="{MONO}" font-size="11" font-weight="700" fill="{dot}">{state}</text>'
-        f'<text x="118" y="18" font-family="{MONO}" font-size="11" fill="{t["muted"]}">{escape(detail)}</text>'
+        "<style>" + font_css("inter-300", "inter-600")
+        + "@keyframes p{0%,100%{opacity:1}50%{opacity:.35}}.d{animation:p 2s ease-in-out infinite}</style>"
+        f'<rect width="{w}" height="{h}" rx="15" fill="{BLACK}"/>'
+        f'<circle class="d" cx="17" cy="15" r="4.5" fill="{dot}"/>'
+        f'<text x="30" y="19" font-family="{BODY}" font-weight="600" font-size="11" letter-spacing=".9" '
+        f'fill="{WHITE}">{state}</text>'
+        f'<text x="{98 if up else 106}" y="19" font-family="{BODY}" font-weight="300" font-size="11" '
+        f'fill="{SILVER}">{escape(detail)}</text>'
         "</svg>"
     )
 
@@ -196,12 +192,11 @@ def main():
         (ago(last), "último deploy"),
     ]
     stamp = NOW.astimezone(BRT).strftime("%d/%m %H:%M BRT")
-    for name, theme in THEMES.items():
-        with open(os.path.join(out, f"live-{name}.svg"), "w") as f:
-            f.write(live_svg(theme, cells, stamp))
-        for key, (up, uptime, ms) in status.items():
-            with open(os.path.join(out, f"status-{key}-{name}.svg"), "w") as f:
-                f.write(status_svg(theme, up, uptime, ms))
+    with open(os.path.join(out, "live.svg"), "w") as f:
+        f.write(live_svg(cells, stamp))
+    for key, (up, uptime, ms) in status.items():
+        with open(os.path.join(out, f"status-{key}.svg"), "w") as f:
+            f.write(status_svg(up, uptime, ms))
 
 
 if __name__ == "__main__":

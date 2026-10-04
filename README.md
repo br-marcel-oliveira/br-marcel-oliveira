@@ -1,16 +1,12 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Marcel Oliveira — 26 anos liderando TI." src="assets/banner-dark.svg" width="100%">
-</picture>
+<img alt="Marcel Oliveira — 26 anos liderando TI." src="assets/banner.svg" width="100%">
 
 <br><br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-br--marcel--oliveira-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/br-marcel-oliveira)
-[![X](https://img.shields.io/badge/X-@br__marcel__olv-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/br_marcel_olv)
-[![Kalibra](https://img.shields.io/badge/kalibra.fitness-↗-3DDC97?style=for-the-badge&labelColor=0D1117)](https://www.kalibra.fitness)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-br--marcel--oliveira-8052FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://linkedin.com/in/br-marcel-oliveira)
+[![X](https://img.shields.io/badge/X-@br__marcel__olv-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=000000)](https://twitter.com/br_marcel_olv)
+[![Kalibra](https://img.shields.io/badge/kalibra.fitness-↗-000000?style=for-the-badge&labelColor=000000)](https://www.kalibra.fitness)
 
 </div>
 
@@ -20,13 +16,11 @@
 <tr>
 <td width="50%" valign="top">
 
+<img src="assets/logo-kalibra.svg" width="72" height="72" alt="Logo Kalibra">
+
 ### Kalibra
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-kalibra-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-kalibra-light.svg">
-  <img alt="Status da API do Kalibra" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-kalibra-dark.svg">
-</picture>
+<img alt="Status da API do Kalibra" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-kalibra.svg">
 
 SaaS de antropometria para clínicas e avaliadores físicos. Medidas de campo viram laudo profissional em segundos.
 
@@ -41,13 +35,11 @@ SaaS de antropometria para clínicas e avaliadores físicos. Medidas de campo vi
 </td>
 <td width="50%" valign="top">
 
+<img src="assets/logo-condominio.svg" width="72" height="72" alt="Logo do sistema de gestão de condomínio">
+
 ### Gestão de Condomínio
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-condominio-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-condominio-light.svg">
-  <img alt="Status do sistema de gestão de condomínio" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-condominio-dark.svg">
-</picture>
+<img alt="Status do sistema de gestão de condomínio" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/status-condominio.svg">
 
 Matou duas planilhas Excel. Rateio mensal de água e luz do início ao fim, sem digitação.
 
@@ -65,24 +57,13 @@ Matou duas planilhas Excel. Rateio mensal de água e luz do início ao fim, sem 
 
 ## Ao vivo
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/live-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/live-light.svg">
-  <img alt="Deploys, commits, produtos no ar e último deploy — atualizado de hora em hora" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/live-dark.svg" width="100%">
-</picture>
+<img alt="Deploys, commits, produtos no ar e último deploy — atualizado de hora em hora" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/live.svg" width="100%">
 
 <sub>Gerado de hora em hora por GitHub Action a partir dos repositórios privados dos produtos. Só números agregados.</sub>
 
 ## Como eu entrego
 
-```mermaid
-flowchart LR
-    A[Problema de negócio] --> B[Spec e design]
-    B --> C[Plano em incrementos]
-    C --> D[Build com agentes de IA]
-    D --> E[Testes golden + CI]
-    E --> F[Produção: IaC + OIDC]
-```
+<img alt="Como eu entrego: problema de negócio, spec e design, plano em incrementos, build com agentes de IA, testes golden e CI, produção com IaC e OIDC." src="assets/como-eu-entrego.svg" width="100%">
 
 Um operador, padrão de engenharia de time.
 
@@ -105,30 +86,26 @@ Foco em clareza de direção, responsabilização, performance consistente e evo
 
 ## Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Odoo](https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
-![Apache NiFi](https://img.shields.io/badge/Apache_NiFi-728E9B?style=flat-square&logo=apachenifi&logoColor=white)
-![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-000000?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=flat-square&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-000000?style=flat-square&logo=supabase&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-000000?style=flat-square&logo=microsoftazure&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-000000?style=flat-square&logo=googlecloud&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-000000?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-000000?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000000?style=flat-square&logo=githubactions&logoColor=white)
+![Odoo](https://img.shields.io/badge/Odoo-000000?style=flat-square&logo=odoo&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-000000?style=flat-square&logo=dbt&logoColor=white)
+![Apache NiFi](https://img.shields.io/badge/Apache_NiFi-000000?style=flat-square&logo=apachenifi&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-000000?style=flat-square&logo=zabbix&logoColor=white)
 
 ## Commits
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/snake/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/snake/snake-light.svg">
-  <img alt="Gráfico de contribuições sendo comido por uma cobrinha" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/snake/snake-dark.svg" width="100%">
-</picture>
+<img alt="Gráfico de contribuições sendo comido por uma cobrinha" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/snake/snake.svg" width="100%">
 
 ---
 
