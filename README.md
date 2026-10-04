@@ -3,7 +3,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Marcel Oliveira — 25 anos liderando TI. Agora eu coloco produto no ar." src="assets/banner-dark.svg" width="100%">
+  <img alt="Marcel Oliveira — 26 anos liderando TI." src="assets/banner-dark.svg" width="100%">
 </picture>
 
 <br><br>
