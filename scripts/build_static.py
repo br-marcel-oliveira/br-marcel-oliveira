@@ -68,23 +68,23 @@ def constellation(x0, y0, w, h, seed=7):
 
 
 def banner():
-    W, H = 880, 330
+    W, H = 880, 362
     phrases = [
         "Head de TI · Founder @ MOIT · AI-native builder",
         "FastAPI · Next.js · Postgres · Azure · Terraform",
         "do problema de negócio ao deploy em produção",
     ]
     n, cyc = len(phrases), 4 * len(phrases)
-    tx, ty = 48, 268
+    tx, ty = 48, 302
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
-        'aria-label="Marcel Oliveira — 26 anos liderando TI. Agora eu coloco produto no ar.">',
+        'aria-label="Marcel Oliveira — 26 anos liderando TI, usando tecnologia para gerar valor para o negócio.">',
         "<style>" + font_css("sg-400", "inter-300", "inter-600")
         + "@keyframes tw{0%,100%{opacity:1}50%{opacity:.2}}"
         ".tw{animation:tw 3s ease-in-out infinite}.t1{animation-delay:.7s}.t2{animation-delay:1.5s}.t3{animation-delay:2.2s}"
         "</style>",
         f'<rect width="{W}" height="{H}" rx="16" fill="{BLACK}"/>',
-        constellation(560, 30, 290, 270),
+        constellation(560, 40, 290, 285),
         f'<rect x="{tx}" y="44" width="92" height="24" rx="12" fill="{VIOLET}"/>',
         f'<text x="{tx + 46}" y="60.5" text-anchor="middle" font-family="{BODY}" font-weight="600" font-size="11" '
         f'letter-spacing=".9" fill="{WHITE}">SHIPPING</text>',
@@ -93,9 +93,11 @@ def banner():
         f'<text x="{tx - 3}" y="146" font-family="{DISPLAY}" font-weight="400" font-size="70" letter-spacing="-3" '
         f'fill="{WHITE}">Marcel Oliveira</text>',
         f'<text x="{tx}" y="194" font-family="{DISPLAY}" font-weight="400" font-size="27" letter-spacing="-.6" '
-        f'fill="{SILVER}">26 anos liderando TI.</text>',
+        f'fill="{SILVER}">26 anos liderando TI,</text>',
         f'<text x="{tx}" y="228" font-family="{DISPLAY}" font-weight="400" font-size="27" letter-spacing="-.6" '
-        f'fill="{SILVER}">Agora eu <tspan fill="{AMBER}">coloco produto no ar</tspan>.</text>',
+        f'fill="{SILVER}">usando tecnologia para <tspan fill="{AMBER}">gerar</tspan></text>',
+        f'<text x="{tx}" y="262" font-family="{DISPLAY}" font-weight="400" font-size="27" letter-spacing="-.6" '
+        f'fill="{AMBER}">valor para o negócio<tspan fill="{SILVER}">.</tspan></text>',
     ]
     kt, xs = [], []
     for i, p in enumerate(phrases):
