@@ -97,9 +97,6 @@ Foco em clareza de direção, responsabilização, performance consistente e evo
 ![Apache NiFi](https://img.shields.io/badge/Apache_NiFi-728E9B?style=flat-square&logo=apachenifi&logoColor=white)
 ![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
 
-## Commits
-
-<img alt="Gráfico de contribuições sendo comido por uma cobrinha" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/snake/snake.svg" width="100%">
 
 ---
 
