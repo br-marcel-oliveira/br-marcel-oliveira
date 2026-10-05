@@ -30,9 +30,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Gerar SVGs
+      - name: Gerar selos de status
         env:
-          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
           METRICS_CONFIG: ${{ secrets.METRICS_CONFIG }}
         run: python scripts/live_metrics.py out
 
