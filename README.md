@@ -84,6 +84,9 @@ Foco em clareza de direção, responsabilização, performance consistente e evo
 ![Claude Code](https://img.shields.io/badge/Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white)
+![NotebookLM](https://img.shields.io/badge/NotebookLM-000000?style=flat-square&logo=notebooklm&logoColor=white)
+![Nano Banana](https://img.shields.io/badge/Nano_Banana-FFD43B?style=flat-square&logo=googlegemini&logoColor=black)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-10A37F?style=flat-square)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
