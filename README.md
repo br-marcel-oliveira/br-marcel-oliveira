@@ -55,12 +55,6 @@ Matou duas planilhas Excel. Rateio mensal de água e luz do início ao fim, sem 
 </tr>
 </table>
 
-## Ao vivo
-
-<img alt="Deploys, commits, produtos no ar e último deploy — atualizado de hora em hora" src="https://raw.githubusercontent.com/br-marcel-oliveira/br-marcel-oliveira/metrics/live.svg" width="100%">
-
-<sub>Gerado de hora em hora por GitHub Action a partir dos repositórios privados dos produtos. Só números agregados.</sub>
-
 ## Como eu entrego
 
 <img alt="Como eu entrego: problema de negócio, spec e design, plano em incrementos, build com agentes de IA, testes golden e CI, produção com IaC e OIDC." src="assets/como-eu-entrego.svg" width="100%">
