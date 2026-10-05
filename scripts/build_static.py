@@ -5,7 +5,6 @@ Rodar localmente quando o texto mudar; a saída vai commitada em assets/.
 Requer fonttools + brotli (medição de texto): pip install fonttools brotli
 Uso: python scripts/build_static.py [<simbolo-condominio.svg> <logo-kalibra.png>]
 """
-import math
 import os
 import random
 import re
@@ -30,40 +29,58 @@ def text_width(font, text, size, tracking=0.0):
     return units * size / upm + tracking * len(text)
 
 
-def constellation(x0, y0, w, h, seed=7):
-    """Constelação de partículas em forma de cérebro (assinatura da landing MOIT)."""
-    rng = random.Random(seed)
-    cx, cy = x0 + w / 2, y0 + h / 2
+def constellation(x0, y0, w, h, n=110, seed=7):
+    """Porta para SVG da constelação da landing moit.com.br (moit_theme/js/brain_constellation).
 
-    def inside(x, y):
-        nx, ny = (x - cx) / (w / 2), (y - cy) / (h / 2)
-        lobe = ((nx + 0.05) / 0.95) ** 2 + ((ny + 0.12) / 0.78) ** 2 <= 1
-        stem = ((nx - 0.18) / 0.32) ** 2 + ((ny - 0.62) / 0.3) ** 2 <= 1
-        return lobe or stem
+    Mesmos blobs do cérebro, raio de conexão (16% do menor lado), opacidade da linha
+    por distância e deriva de ±14px por ponto. No SVG a opacidade de cada linha é
+    fixada pela distância inicial (o canvas recalcula a cada quadro).
+    """
+    rng = random.Random(seed)
+    blobs = [(.34, .44, .20), (.5, .36, .22), (.66, .44, .20), (.42, .6, .18), (.58, .6, .18), (.5, .52, .24)]
+
+    def inside(nx, ny):
+        return any((nx - bx) ** 2 + ((ny - by) * 1.15) ** 2 <= r * r for bx, by, r in blobs)
 
     pts = []
     tries = 0
-    while len(pts) < 78 and tries < 20000:
+    while len(pts) < n and tries < n * 60:
         tries += 1
-        x, y = x0 + rng.random() * w, y0 + rng.random() * h
-        if inside(x, y) and all((x - a) ** 2 + (y - b) ** 2 > 17 ** 2 for a, b in pts):
-            pts.append((x, y))
+        nx, ny = rng.random(), rng.random()
+        if inside(nx, ny):
+            pts.append((x0 + nx * w, y0 + ny * h, (rng.random() - .5) * .12, (rng.random() - .5) * .12))
 
-    edges = set()
-    for i, (x, y) in enumerate(pts):
-        near = sorted(range(len(pts)), key=lambda j: (pts[j][0] - x) ** 2 + (pts[j][1] - y) ** 2)[1:4]
-        for j in near:
-            if math.dist(pts[i], pts[j]) < 58:
-                edges.add(tuple(sorted((i, j))))
+    def drift(o, v):
+        # Onda triangular o -> o±14 -> o -> o∓14 -> o, na velocidade do canvas (60 fps).
+        sign = 1 if v >= 0 else -1
+        period = max(8.0, min(40.0, 56 / max(abs(v), .01) / 60))
+        vals = ";".join(f"{o + d:.0f}" for d in (0, 14 * sign, 0, -14 * sign, 0))
+        return f'dur="{period:.0f}s" repeatCount="indefinite" values="{vals}"'
 
-    out = [f'<g stroke="{WHITE}" stroke-opacity=".16" stroke-width=".8">']
-    out += [f'<line x1="{pts[a][0]:.1f}" y1="{pts[a][1]:.1f}" x2="{pts[b][0]:.1f}" y2="{pts[b][1]:.1f}"/>' for a, b in edges]
-    out.append("</g>")
-    for i, (x, y) in enumerate(pts):
-        color = VIOLET if i % 9 == 0 else AMBER if i % 17 == 0 else WHITE
-        r = 2.6 if color != WHITE else 1.2 + rng.random() * 1.3
-        cls = f' class="tw t{i % 4}"' if i % 3 == 0 else ""
-        out.append(f'<circle{cls} cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{color}"/>')
+    max_d2 = (min(w, h) * .16) ** 2
+    out = []
+    for i in range(len(pts)):
+        for j in range(i + 1, len(pts)):
+            xi, yi, vxi, vyi = pts[i]
+            xj, yj, vxj, vyj = pts[j]
+            d2 = (xi - xj) ** 2 + (yi - yj) ** 2
+            if d2 > max_d2:
+                continue
+            alpha = (1 - d2 / max_d2) * .5
+            if alpha < .06:  # quase invisível; corta peso do arquivo
+                continue
+            out.append(
+                f'<line x1="{xi:.0f}" y1="{yi:.0f}" x2="{xj:.0f}" y2="{yj:.0f}" stroke="{VIOLET}" '
+                f'stroke-opacity="{alpha:.2f}">'
+                f'<animate attributeName="x1" {drift(xi, vxi)}/><animate attributeName="y1" {drift(yi, vyi)}/>'
+                f'<animate attributeName="x2" {drift(xj, vxj)}/><animate attributeName="y2" {drift(yj, vyj)}/>'
+                "</line>"
+            )
+    for x, y, vx, vy in pts:
+        out.append(
+            f'<circle cx="{x:.0f}" cy="{y:.0f}" r="1.6" fill="{VIOLET}" fill-opacity=".85">'
+            f'<animate attributeName="cx" {drift(x, vx)}/><animate attributeName="cy" {drift(y, vy)}/></circle>'
+        )
     return "\n".join(out)
 
 
@@ -79,12 +96,10 @@ def banner():
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-label="Marcel Oliveira — 26 anos liderando TI, usando tecnologia para gerar valor para o negócio.">',
-        "<style>" + font_css("sg-400", "inter-300", "inter-600")
-        + "@keyframes tw{0%,100%{opacity:1}50%{opacity:.2}}"
-        ".tw{animation:tw 3s ease-in-out infinite}.t1{animation-delay:.7s}.t2{animation-delay:1.5s}.t3{animation-delay:2.2s}"
-        "</style>",
+        "<style>" + font_css("sg-400", "inter-300", "inter-600") + "</style>",
         f'<rect width="{W}" height="{H}" rx="16" fill="{BLACK}"/>',
-        constellation(560, 40, 290, 285),
+        f'<clipPath id="bn"><rect width="{W}" height="{H}" rx="16"/></clipPath>',
+        '<g clip-path="url(#bn)">' + constellation(480, -50, 400, 470, n=130) + "</g>",
         f'<rect x="{tx}" y="44" width="92" height="24" rx="12" fill="{VIOLET}"/>',
         f'<text x="{tx + 46}" y="60.5" text-anchor="middle" font-family="{BODY}" font-weight="600" font-size="11" '
         f'letter-spacing=".9" fill="{WHITE}">SHIPPING</text>',
