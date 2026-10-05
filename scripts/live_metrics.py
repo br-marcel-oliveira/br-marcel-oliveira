@@ -143,10 +143,10 @@ def live_svg(cells, stamp):
 
 
 def status_svg(up, uptime, latency):
-    w, h = 300, 30
+    w, h = 370, 30
     dot = TEAL if up else AMBER
     state = "ONLINE" if up else "OFFLINE"
-    detail = f"uptime 30d {uptime} · {latency} ms"
+    detail = f"uptime {uptime} · checagens periódicas · {latency} ms"
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">'
         "<style>" + font_css("inter-300", "inter-600")
