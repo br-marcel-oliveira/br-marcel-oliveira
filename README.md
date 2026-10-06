@@ -99,7 +99,7 @@ Foco em clareza de direção, responsabilização, performance consistente e evo
 </tr>
 <tr>
 <td width="190"><b>ERP & Observabilidade</b></td>
-<td><img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" alt="Odoo"> <img src="https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white" alt="Zabbix"> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"></td>
+<td><img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" alt="Odoo"> <img src="https://img.shields.io/badge/TOTVS-1D1D1B?style=flat-square&logo=totvs&logoColor=white" alt="TOTVS"> <img src="https://img.shields.io/badge/NetSuite-1B4F72?style=flat-square" alt="NetSuite"> <img src="https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white" alt="Zabbix"> <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana"></td>
 </tr>
 </table>
 
